@@ -11,12 +11,7 @@ const inputPhone = form.querySelector('#phone-number');
 
 //config your firebase push
 var config = {
-    apiKey: "AIzaSyAj39pe8w7pB96gJ9ntNkyeoKIIgNAEfJE",
-    authDomain: "landing-fintech-8290a.firebaseapp.com",
-    databaseURL: "https://landing-fintech-8290a.firebaseio.com",
-    projectId: "landing-fintech-8290a",
-    storageBucket: "landing-fintech-8290a.appspot.com",
-    messagingSenderId: "812826296865"
+
 };
 
 //create a functions to push
