@@ -15,9 +15,9 @@
 
     <!-- faviccon -->
     <link rel="icon" type="image/png"
-          href="https:.png" sizes="32x32">
+          href="#" sizes="32x32">
     <link rel="icon" type="image/png"
-          href="https://.png" sizes="16x16">
+          href="#" sizes="16x16">
 
     <!--Owl Carousel css-->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -35,17 +35,17 @@
     </div>
     <ul class="menu_items">
         <li class="menu_item">
-            <a class="menu_link">
+            <a class="menu_link" data-scroll-nav="1">
                 Узнать больше
             </a>
         </li>
         <li class="menu_item">
-            <a class="menu_link">
+            <a class="menu_link" data-scroll-nav="2">
                 читать отзывы
             </a>
         </li>
         <li class="menu_item">
-            <a class="menu_link">
+            <a href="#address1" class="menu_link" >
                 Салоны Vital Rays
             </a>
         </li>
@@ -69,7 +69,7 @@
         <p class="hero_small-title">
             Торопитесь: осталось <span class="hero_small-title--highlighted">7 мест</span> на июнь!
         </p>
-        <a class="hero_button basic-button">Записаться на сеанс</a>
+        <a class="hero_button basic-button" data-scroll-nav="0">Записаться на сеанс</a>
     </div>
 </section>
 <section class="tech">
@@ -77,7 +77,7 @@
     <h2 class="tech_title section-headline">
         Техника, меняющая жизнь к лучшему
     </h2>
-    <p class="tech_content-item">
+    <p class="tech_content-item" data-scroll-index="1">
         Помните как сладко вы спали по ночам, с каким рвением и легкостью вставали по утрам, когда вам было 30? Суставы
         не болели, шею не ломило, а про давление вы и знать не знали. Это ощущение можно вернуть!
     </p>
@@ -131,7 +131,7 @@
 </section>
 <section class="contact">
     <div class="contact_container container">
-    <h2 class="contact_title section-headline">
+    <h2 class="contact_title section-headline" data-scroll-index="0">
         Записаться на
         <span class="section-headline_hl">бесплатный</span>
         сеанс
@@ -141,7 +141,8 @@
     <form class="contact_form" action="#" method="post">
         <input type="text" class="contact_input" placeholder="Ваше Имя*">
         <input type="tel" class="contact_input" placeholder="Ваш телефон*">
-        <input type="submit" class="contact_btn basic-button" value="Записаться на прием">
+        <button type="submit" class="contact_btn basic-button">Записаться на прием
+        </button>
     </form>
     <p class="contact_support-text">
         Мы рады видеть Вас в наших салонах
@@ -238,8 +239,9 @@
         </div>
     </div>
 </section>
-<section class="address">
-    <div class="address_container container">
+<section class="address" data-scroll-index="3">
+    <a name="address1"></a>
+    <div class="address_container container" >
         <h2 class="address_headline section-headline">
             Адреса салонов в Казани
         </h2>
@@ -429,7 +431,7 @@
     </div>
     </div>
 </section>
-<section class="feedback">
+<section class="feedback" data-scroll-index="2">
     <div class="feedback_video-container container">
     <h2 class="feedback_headline section-headline">
         Отзывы клиентов
@@ -484,7 +486,8 @@
         <form class="contact_form" action="#" method="post">
             <input type="text" class="contact_input" placeholder="Ваше Имя*">
             <input type="tel" class="contact_input" placeholder="Ваш телефон*">
-            <input type="submit" class="contact_btn basic-button" value="Записаться на прием">
+            <button type="submit" class="contact_btn basic-button">Записаться на прием
+            </button>
         </form>
         <p class="contact_support-text">
             Мы рады видеть Вас в наших салонах
@@ -519,6 +522,23 @@
         </p>
     </div>
 </footer>
+<section class="popup hide">
+    <div class="popup_container">
+        <h3 class="popup_headline">
+            Заказать звонок
+        </h3>
+        <form class="popup_form" action="#" method="post">
+            <div class="popup_close">
+                <img class="popup_close-img" src="assets/ico/x.png">
+            </div>
+            <input type="text" class="popup_input" placeholder="Введите Ваше имя">
+            <input type="tel" class="popup_input" placeholder="Введите Ваш телефон">
+            <button type="submit" class="popup_btn basic-button">Перезвоните мне
+            </button>
+        </form>
+
+    </div>
+</section>
 
 
 <!--Jquery js-->
