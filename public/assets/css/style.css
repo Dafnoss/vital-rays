@@ -762,6 +762,10 @@ Doctors
     padding-left: 40px;
 }
 
+. .doctor_btn--mobile {
+    display: none;
+}
+
 .hospital {
     width: 33.3%;
     text-align: center;
@@ -1156,10 +1160,270 @@ Footer
         display: none;
     }
 
+}
+
+@media (max-width: 425px) {
+
+    p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    /**
+    Menu
+     */
+
+    .menu_logo {
+        flex-shrink: 1;
+    }
+
+    .menu_items {
+        display: none;
+    }
+
+    /**
+    hero
+     */
+
+    .hero_content {
+        padding: 40px 20px;
+    }
+
+    /**
+    TEch
+
+     */
+
+    .tech {
+        padding-bottom: 0px;
+    }
+
+    .tech_container {
+        padding: 20px ;
+    }
+
+    .tech_imgs {
+        flex-wrap: wrap;
+    }
+
+    .tech_img-item {
+        width: 50%;
+    }
+
+    .tech_bullets {
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    .tech_bullet {
+        flex-grow: 1;
+        margin-bottom: 50px;
+    }
+
+    /**
+    COntact
+     */
+
+    .contact_form {
+        flex-direction: column;
+    }
+
+    .contact_desc {
+        margin-bottom: 20px;
+    }
+
+    .contact_input {
+        margin: 0 0 30px 0;
+    }
+
+    /**
+    Problems
+     */
+
+    .problems_item {
+        width: 100%;
+    }
+
+    .problems_content {
+        background-image: none;
+    }
+
+    .problems_boxed-text {
+        padding: 20px;
+    }
+
+    .problems_boxed-text::before {
+        display: none;
+    }
+
+    .address_item {
+        flex-direction: column;
+    }
+
+    /**
+    Address
+     */
+
+    .address_container {
+        padding-top: 30px;
+    }
+
+    .address_item-wrapper {
+        width: 100%;
+    }
+
+    .address_image {
+        width: 100%;
+    }
+
+    .address_transport {
+        margin-bottom: 20px;
+    }
+
+    .
+
+    /**
+    Spots
+     */
+
+    .spots_column {
+        width: 100%;
+    }
+
+    .sign-highlight {
+        width: calc(100% - 40px);
+        margin: 0 20px 20px 20px;
+
+    }
+
+    /**
+    Doctor
+     */
+
+    .doctor_row {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .doctor_img {
+        width: 100%;
+    }
+
+    .doctor_item {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .doctor_hospitals {
+        flex-direction: column;
+    }
+
+    .hospital {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .hospital:last-child {
+        padding-bottom: 0px;
+    }
+
+    .doctor_btn--desktop {
+        display: none;
+    }
+
+    .doctor_btn--mobile {
+        display: block
+    }
+
+    /**
+    Certificates
+     */
+
+    .certificate_container {
+        margin: 20px;
+    }
+
+    .certificate-item:nth-child(2) {
+        display: none;
+    }
+
+    .certificate_container {
+        justify-content: center;
+    }
+
+    /**
+    Feedback
+     */
+
+    .feedback_text-container {
+        margin: 20px 0;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .feedback_scan:first-child {
+        display: block;
+    }
+
+    .feedback_scan:not(:first-child){
+        display: none;
+    }
+
+}
+
+@media (max-width: 375px) {
 
 
+    /**
+    Menu
+     */
 
+    .menu_numbers::before {
+        display: none;
+    }
 
+    .menu_numbers {
+        padding-left: 0px;
+        margin-top: 5px;
+    }
 
+    .menu_logo {
+        margin-right: 20px;
+    }
 
+    .menu_button {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    /**
+    Hero
+     */
+
+    .hero_title {
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 1.3em;
+    }
+
+    .hero_subtitle {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .hero_small-title {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    /**
+    Tech
+     */
+
+    .tech_bullet:last-child {
+        margin-bottom: 0px;
+    }
 }
