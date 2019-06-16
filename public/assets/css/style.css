@@ -155,7 +155,7 @@ main {
 }
 
 :root {
-    --main-green: #74a93b;
+    --main-green: #58AB2B;
 }
 
 ul,
@@ -258,7 +258,7 @@ Menu
     height: 25px;
     background-image: url("../ico/phone.png");
     top: 2px;
-    left: 0px;
+    left: 0;
 }
 
 .basic-button {
@@ -267,9 +267,11 @@ Menu
     padding: 10px 30px;
     font-size: 18px;
     font-weight: 600;
+    font-family: 'SegoeUI', sans-serif;
     text-align: center;
     color: white;
     cursor: pointer;
+    border-width: 0;
     border-radius: 5px;
     box-shadow: 0px 4px 0px 0px #4c6e26;
 }
@@ -391,8 +393,8 @@ Tech
     position: absolute;
     width: 80px;
     height: 80px;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background-image: url("../ico/icon.png");
 }
 
@@ -411,6 +413,461 @@ Tech
     width: 120px;
     height: 120px;
     background-image: url("../ico/in-yan.png");
-    top: 0px;
+    top: 0;
     left: 27px;
+}
+
+/**
+Contact
+ */
+
+.contact {
+    padding-bottom: 80px;
+}
+
+.section-headline_hl {
+    text-transform: uppercase;
+    color: var(--main-green);
+    font-weight: 700;
+}
+
+.contact_desc {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact_title {
+    margin-bottom: 10px;
+}
+
+.contact_form {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.contact_input {
+    display: block;
+    color: #b2b2b2;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    border: none;
+    border-bottom: 1px solid #b2b2b2;
+    padding: 10px 0;
+    min-width: 260px;
+    margin-right: 45px ;
+
+}
+
+.contact_btn {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact_support-text,
+.problems_note {
+    color: #333333;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+/**
+Problems
+ */
+
+.problems_content {
+    box-sizing: border-box;
+    background-color: #f2f2f0;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    height: 670px;
+    background-image: url("../img/granny.png");
+    background-repeat: no-repeat;
+    background-position: center 150px;
+}
+
+.problems_item {
+    padding: 10px 10px 10px 20px;
+    background-color: #FFFFFF;
+    width: 370px;
+    margin-bottom: 20px;
+    border: 2px dotted;
+    border-radius: 10px;
+    border-color: var(--main-green);
+
+
+}
+
+.problems_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.problems_first,
+.problems_second {
+    display: flex;
+    flex-direction: column;
+}
+
+.problems_title {
+    color: var(--main-green);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.problems_boxed-text {
+    position: relative;
+    background-color: var(--main-green);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 30px;
+    padding-left: 150px;
+    margin: 30px 0;
+}
+
+.problems_boxed-text::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../ico/attention.png");
+    background-repeat: no-repeat;
+}
+
+/**
+Address
+ */
+
+.address_container {
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.address_items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address_item {
+    width: 33.3%;
+}
+
+.address_street {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-left: 45px;
+}
+
+.address_street::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-image: url("../ico/locator.png");
+    background-repeat: no-repeat;
+    left: 6px;
+}
+
+
+.address_phone {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-left: 45px;
+}
+
+.address_phone::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url("../ico/phone.png");
+    background-repeat: no-repeat;
+    left: 4px;
+}
+
+.address_transport {
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 50px;
+
+}
+
+.address_transport::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url("../ico/route.png");
+    background-repeat: no-repeat;
+    left: 0px;
+    top: 3px;
+}
+
+.address_transport-headline {
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.address_item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 2px dotted #58AB2B;
+}
+
+/**
+Spotlight
+ */
+
+.spots_container {
+    background-color: #f2f2f0;
+    padding: 80px 0;
+}
+
+.spots_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.spots_column:first-child,
+.spots_column:last-child {
+    width: calc((100% - 260px)/2);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sign-highlight {
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--main-green);
+    padding: 20px;
+    flex-shrink: 0;
+    width: 260px;
+    overflow: hidden;
+}
+
+.sign-highlight::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+    filter: drop-shadow(2px 2px black);
+    background-image: url("../ico/in-yan.png");
+    bottom: -18px;
+    right: -25px;
+}
+
+.sign-highlight_headline {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.sign-highlight_number {
+    color: #FFFFFF;
+}
+
+.sign-highlight_left {
+    font-size: 40px;
+}
+
+.sign-highlight_counter {
+    color: #cccccc;;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.sign-highlight_btn {
+    font-family: 'SegoeUI', sans-serif;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.spots_note {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+/**
+Doctors
+ */
+
+.doctor_headline {
+    margin-top: 80px;
+}
+
+.doctor_row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.doctor_hospitals {
+    display: flex;
+    justify-content: space-between;
+}
+
+.doctor_img {
+    width: 50%;
+    padding-right: 0px;
+}
+.doctor_item {
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 0px;
+    width: 50%;
+}
+
+.doctor_text {
+    padding-right: 100px;
+}
+
+.doctor_btn {
+    margin-top: 25px;
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.hospital {
+    width: 33.3%;
+    text-align: center;
+}
+
+.hospital_logo img {
+    height: 80px;
+    width: auto;
+}
+
+.hospital_name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/**
+Feedback
+ */
+
+.feedback_headline {
+}
+
+
+.feedback_video-container {
+    padding-top: 60px;
+    background-color: #f2f2f0;
+}
+
+.feedback_desc {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.feedback_videos {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+}
+
+.feedback_note {
+    text-align: center;
+    padding: 50px 20px;
+
+}
+
+.feedback_video {
+    margin: 0 10px;
+}
+
+.feedback_wrapper {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.feedback_text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 80px 30px 80px;
+
+}
+
+.feedback_btn {
+    display: inline-block;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/**
+Certificates
+ */
+
+.certificate_wrapper {
+}
+
+.certificate_headline {
+    margin-bottom: 20px;
+}
+
+.certificate_desc {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.certificate_container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+
+/**
+Footer
+ */
+
+.footer-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid var(--main-green);
 }
