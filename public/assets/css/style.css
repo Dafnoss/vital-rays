@@ -871,3 +871,295 @@ Footer
     text-align: center;
     border-top: 1px solid var(--main-green);
 }
+
+@media (max-width: 768px) {
+
+    p {
+        font-size: 17px;
+    }
+
+    .container {
+        width: 768px;
+    }
+
+    /**
+    Menu
+     */
+
+    .menu_container {
+        box-sizing: border-box;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .menu_item {
+        margin-top: 0px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .menu_items {
+        flex-grow: 0;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+
+    .menu_phone,
+    .menu_logo {
+        flex-shrink: 0;
+    }
+
+    .menu_numbers {
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+
+    .basic-button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /**
+    Hero
+     */
+
+    .hero_title,
+    .hero_subtitle,
+    .hero_small-title,
+    .hero_content{
+        text-align: center;
+    }
+
+    .hero_subtitle {
+        line-height: 1.3em;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .hero_content {
+        background-position: center -70px;
+        padding-bottom: 200px;
+    }
+
+    /**
+    Tech
+     */
+
+    .tech_container {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tech {
+        padding-bottom: 20px;
+    }
+
+    /**
+    Contact
+     */
+
+    .contact {
+        padding-bottom: 40px;
+    }
+
+    .contact_container {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact_input {
+        min-width: 220px;
+        margin-right: 27px;
+    }
+
+    /**
+    Problems
+     */
+
+    .problems_list {
+        flex-direction: column;
+    }
+
+    .problems_first,
+    .problems_second {
+        align-items: flex-end;
+
+    }
+
+    .problems_wrapper {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .problems_content {
+        height: auto;
+        background-image: url("../img/granny-tablet-2.png");
+        background-position: 15px 230px;
+    }
+
+    .problems_item {
+        box-sizing: border-box;
+        width: 480px;
+    }
+
+    /**
+    Address
+     */
+
+    .address_items {
+        flex-direction: column;
+    }
+
+    .address_container{
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    .address_item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .address_item:not(:last-child) {
+        margin: 0 0 30px 0;
+        padding: 0 0 30px 0;
+        border-right: none;
+        border-bottom: 2px dotted var(--main-green);
+    }
+
+    .address_item-wrapper {
+        width: 52%;
+
+    }
+
+    .address_image {
+        width: 352px;
+        height: 228px;
+        overflow: hidden;
+    }
+
+    /**
+    Spots
+     */
+
+    .spots_container {
+        padding: 40px 0;
+    }
+
+    .spots_content {
+        flex-wrap: wrap;
+    }
+
+    .spots_column {
+        flex-grow: 1;
+        margin-bottom: 20px;
+    }
+
+    .spots_column:last-child{
+        margin-bottom: 0px;
+    }
+
+    .sign-highlight {
+        flex-grow: 0;
+    }
+
+    .spots_note {
+        display: block;
+        text-align: center;
+    }
+
+    /**
+    Doctor
+     */
+    .doctor_headline {
+        margin-top: 40px;
+    }
+
+    .doctor_container {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .doctor_row {
+        padding-bottom: 30px;
+    }
+
+    .doctor_text {
+        padding-right: 0px;
+    }
+
+    .doctor_item:not(:last-child) {
+        padding-left: 0px;
+    }
+
+    .hospital_name {
+        padding: 0px 10px;
+    }
+
+    /**
+    Feedback
+     */
+
+    .feedback_wrapper {
+        padding-bottom: 40px;
+    }
+
+    .feedback_video-container {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    .feedback_video:last-child {
+        display: none;
+    }
+
+    .feedback_video {
+        margin: 0 auto;
+
+    }
+
+    .feedback_note {
+        padding: 30px 20px
+    }
+
+    .feedback_scan:first-child,
+    .feedback_scan:last-child {
+        display: none;
+
+    }
+
+    .feedback_btn {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    /**
+    Certificates
+     */
+
+    .certificate-item:last-child {
+        display: none;
+    }
+
+
+
+
+
+
+
+}
