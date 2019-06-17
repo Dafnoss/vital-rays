@@ -37,8 +37,15 @@ $(document).ready(function () {
 
             if(!hasError) {
                 element.innerHTML = '<p class="success_message">Спасибо, ваш запрос отправлен!<br> Мы свяжемся c Вами в течении 24 часов.</p>';
-                element.parentNode.querySelector('.contact_desc').classList.add('hide');
-                element.parentNode.querySelector('.contact_support-text').classList.add('hide');
+
+                const descr = element.parentNode.querySelector('.contact_desc');
+                const suptext = element.parentNode.querySelector('.contact_support-text');
+
+                if (descr) {
+                    descr.classList.add('hide');
+                } else if (suptext) {
+                    suptext.classList.add('hide');
+                }
 
     //            triggerTag();
 

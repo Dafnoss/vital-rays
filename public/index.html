@@ -545,12 +545,20 @@
         <h3 class="popup_headline">
             Заказать звонок
         </h3>
+
+        <div class="popup_close">
+            <img class="popup_close-img" src="assets/ico/x.png">
+        </div>
+
         <form class="popup_form submit_form" action="#" method="post">
-            <div class="popup_close">
-                <img class="popup_close-img" src="assets/ico/x.png">
+            <div class="popup_wrapper">
+                <label for="name2" class="hide"> Имя </label>
+                <input id="name2" type="text" class="popup_input submit_text requiredField" placeholder="Введите Ваше имя">
             </div>
-            <input type="text" class="popup_input submit_text requiredField" placeholder="Введите Ваше имя">
-            <input type="tel" class="popup_input submit_tel requiredField" placeholder="Введите Ваш телефон">
+            <div class="popup_wrapper">
+                <label for="tel2" class="hide"> Телефон </label>
+                <input id="tel2" type="tel" class="popup_input submit_tel requiredField" placeholder="Введите Ваш телефон">
+            </div>
             <button type="submit" class="popup_btn basic-button">Перезвоните мне
             </button>
         </form>

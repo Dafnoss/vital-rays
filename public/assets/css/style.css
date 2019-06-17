@@ -497,6 +497,7 @@ Contact
 }
 
 .contact_btn {
+    align-self: flex-start;
     font-size: 18px;
     font-weight: 600;
 }
@@ -971,9 +972,17 @@ Popup
     box-sizing: border-box;
     width: 100%;
     padding: 15px 30px;
-    margin-bottom: 20px;
     border: 1px solid gainsboro;
 }
+
+.popup_wrapper {
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.popup_form {
+    text-align: center}
 
 .popup_close {
     position: absolute;
