@@ -87,6 +87,10 @@ video {
     vertical-align: baseline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hide {
     display: none;
 }
@@ -251,8 +255,9 @@ Menu
 
 .menu_link:hover,
 .menu_link:active,
-.menu_link:visited {
-    color: inherit;
+.menu_link:visited,
+.menu_link {
+    color: #4E4E4E;
 }
 
 .menu_numbers {
@@ -505,6 +510,12 @@ Contact
 
 }
 
+.success_message {
+    margin-top: 45px;
+    font-size: 20px;
+
+}
+
 /**
 Problems
  */
@@ -736,8 +747,9 @@ Spotlight
 }
 
 .sign-highlight_btn {
+    display: block;
     z-index: 20;
-    font-family: 'SegoeUI', sans-serif;
+    font-family: 'SegoeUI', sans-serif;F
     padding: 10px 20px;
     color: #FFFFFF;
     font-weight: 600;

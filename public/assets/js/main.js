@@ -3,19 +3,18 @@
     $(window).on("load", function() {
         "use strict";
 
- /* smooth scroll
-  -------------------------------------------------------*/
-      $.scrollIt({
+        //Counter randomiser
 
-        easing: 'swing',
-        scrollTime: 900,
-        activeClass: 'active',
-        onPageChange: null,
-        topOffset: -70,
-        upKey: 38,
-        downKey: 40
+        const counter1 = document.querySelector('.hero_small-title--highlighted');
+        const counter2 = document.querySelector('.sign-highlight_number');
 
-      });
+        var currentDate = new Date();
+        var date = currentDate.getDate();
+
+        counter1.innerHTML = 31 - date;
+        counter2.innerHTML = 31 - date;
+
+        //Popup
 
       const close = document.querySelector('.popup_close-img');
       const popup = document.querySelector('.popup');

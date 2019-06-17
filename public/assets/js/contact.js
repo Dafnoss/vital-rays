@@ -17,61 +17,33 @@ $(document).ready(function () {
 
     console.log(valArrForms);
 
-
-
     valArrForms.forEach(function (element) {
-
         element.addEventListener('submit', function () {
 
             $('.submit_form .error').remove();
             var hasError = false;
-            $('.requiredField').each(function () {
-                if (jQuery.trim($(this).val()) == '') {
-                    var labelText = $(this).prev('label').text();
-                    $(this).parent().append('<span class="error">Вы забыли ввести ' + labelText + '</span>');
-                    $(this).addClass('inputError');
-                    hasError = true;
-                } else if ($(this).hasClass('email')) {
-                    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-                    if (!emailReg.test(jQuery.trim($(this).val()))) {
-                        var labelText = $(this).prev('label').text();
-                        $(this).parent().append('<span class="error">You entered an invalid ' + labelText + '</span>');
-                        $(this).addClass('inputError');
-                        hasError = true;
-                    }
-                }
 
+            var inputs = element.querySelectorAll('.requiredField');
+
+            inputs.forEach(function (element) {
+                if (jQuery.trim($(element).val()) == '') {
+                    var labelText = $(element).prev('label').text();
+                    $(element).parent().append('<span class="error">Вы забыли ввести ' + labelText + '</span>');
+                    $(element).addClass('inputError');
+                    hasError = true;
+                }
             });
 
-            /*
+
             if(!hasError) {
-                $('form#contact-form input.submit').fadeOut('normal', function() {
-                    $(this).parent().append('');
-                });
-
-                $("#loader").show();
-                $.ajax({
-                    url: "assets/contact/contact.php",
-                    type: "POST",
-                    data:  new FormData(this),
-                    contentType: false,
-                    cache: false,
-                    processData:false,
-                    success: function(data){
-                        $('form#contact-form').slideUp("fast", function() {
-                            $(this).before('<div class="success">Thank you. Your Email was sent successfully.<br> We will contact you within 24 hours.</div>');
-                            $("#loader").hide();
-                        })
-                    }
-                });
-
+                element.innerHTML = '<p class="success_message">Спасибо, ваш запрос отправлен!<br> Мы свяжемся c Вами в течении 24 часов.</p>';
+                element.parentNode.querySelector('.contact_desc').classList.add('hide');
+                element.parentNode.querySelector('.contact_support-text').classList.add('hide');
 
     //            triggerTag();
 
                 return false;
             }
-
-            */
 
         });
 

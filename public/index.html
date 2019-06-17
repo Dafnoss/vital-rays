@@ -35,17 +35,17 @@
     </div>
     <ul class="menu_items">
         <li class="menu_item">
-            <a class="menu_link" data-scroll-nav="1">
+            <a href="#scroll1" class="menu_link" >
                 Узнать больше
             </a>
         </li>
         <li class="menu_item">
-            <a class="menu_link" data-scroll-nav="2">
+            <a href="#scroll2" class="menu_link">
                 читать отзывы
             </a>
         </li>
         <li class="menu_item">
-            <a href="#address1" class="menu_link" >
+            <a href="#scroll3" class="menu_link" >
                 Салоны Vital Rays
             </a>
         </li>
@@ -67,13 +67,14 @@
             Пройдите <span class="hero_subtitle--highlighted">бесплатный</span> 12-дневный оздоровительный курс от Vital Rays
         </p>
         <p class="hero_small-title">
-            Торопитесь: осталось <span class="hero_small-title--highlighted">7 мест</span> на июнь!
+            Торопитесь: осталось <span class="hero_small-title--highlighted">7</span> мест на июнь!
         </p>
-        <a class="hero_button basic-button" data-scroll-nav="0">Записаться на сеанс</a>
+        <a href="#scroll4" class="hero_button basic-button">Записаться на сеанс</a>
     </div>
 </section>
 <section class="tech">
     <div class="tech_container container">
+        <a name="scroll1"></a>
     <h2 class="tech_title section-headline">
         Техника, меняющая жизнь к лучшему
     </h2>
@@ -131,7 +132,8 @@
 </section>
 <section class="contact">
     <div class="contact_container container">
-    <h2 class="contact_title section-headline" data-scroll-index="0">
+        <a name="scroll4"></a>
+    <h2 class="contact_title section-headline">
         Записаться на
         <span class="section-headline_hl">бесплатный</span>
         сеанс
@@ -246,8 +248,8 @@
         </div>
     </div>
 </section>
-<section class="address" data-scroll-index="3">
-    <a name="address1"></a>
+<section class="address">
+    <a name="scroll3"></a>
     <div class="address_container container" >
         <h2 class="address_headline section-headline">
             Адреса салонов в Казани
@@ -353,9 +355,9 @@
                     30
                 </span>
             </p>
-            <div class="sign-highlight_btn">
+            <a href="#scroll5" class="sign-highlight_btn">
                 Записаться
-            </div>
+            </a>
         </div>
         <div class="spots_column">
             <p class="spots_text">
@@ -424,9 +426,9 @@
                 <p class="doctor_text">
                 У пациентов физиотерапевтического отделения, которые прошли курс оздоровления на оборудовании Vital Rays, заметно улучшилось самочувствие, уменьшились и полностью прошли боли в теле, улучшился сон, а самое главное, такие пациенты реже других повторно обращаются в больницу!
                 </p>
-                <div class="doctor_btn doctor_btn--desktop basic-button">
+                <a href="#scroll5" class="doctor_btn doctor_btn--desktop basic-button">
                     Записаться на прием
-                </div>
+                </a>
             </div>
             <div class="doctor_img">
                 <img src="assets/img/signature.jpg">
@@ -438,7 +440,8 @@
     </div>
     </div>
 </section>
-<section class="feedback" data-scroll-index="2">
+<section class="feedback">
+    <a name="scroll2"></a>
     <div class="feedback_video-container container">
     <h2 class="feedback_headline section-headline">
         Отзывы клиентов
@@ -482,8 +485,9 @@
     </div>
 </section>
 <section class="contact">
+    <a name="scroll5"></a>
     <div class="contact_container container">
-        <h2 class="contact_title section-headline">
+        <h2 class="contact_title section-headline" data-scroll-index="0">
             Записаться на
             <span class="section-headline_hl">бесплатный</span>
             сеанс
@@ -491,10 +495,17 @@
         <p class="contact_desc">Заполните форму, наш менеджер свяжется с вами для подбора удобного салона и времени сеанса
         </p>
         <form class="contact_form submit_form" action="#" method="post">
-            <input type="text" class="contact_input submit_text requiredField" placeholder="Ваше Имя*">
-            <input type="tel" class="contact_input submit_tel requiredField" placeholder="Ваш телефон*">
+            <div class="contact_in-wrapper">
+                <label for="name1" class="hide"> Имя </label>
+                <input id="name1" type="text" class="contact_input submit_text requiredField" placeholder="Ваше Имя*">
+            </div>
+            <div class="contact_in-wrapper">
+                <label for="tel1" class="hide"> Телефон   </label>
+                <input id="tel1" type="tel" class="contact_input submit_tel requiredField" placeholder="Ваш телефон*">
+            </div>
             <button type="submit" class="contact_btn basic-button">Записаться на прием
             </button>
+
         </form>
         <p class="contact_support-text">
             Мы рады видеть Вас в наших салонах
