@@ -901,6 +901,10 @@ Certificates
 .certificate_wrapper {
 }
 
+.certificate-item {
+    display: block;
+}
+
 .certificate_headline {
     margin-bottom: 20px;
 }
