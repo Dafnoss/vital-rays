@@ -138,11 +138,18 @@
     </h2>
     <p class="contact_desc">Заполните форму, наш менеджер свяжется с вами для подбора удобного салона и времени сеанса
     </p>
-    <form class="contact_form" action="#" method="post">
-        <input type="text" class="contact_input" placeholder="Ваше Имя*">
-        <input type="tel" class="contact_input" placeholder="Ваш телефон*">
-        <button type="submit" class="contact_btn basic-button">Записаться на прием
-        </button>
+    <form class="contact_form submit_form" action="#" method="post">
+        <div class="contact_in-wrapper">
+            <label for="name" class="hide"> Имя </label>
+            <input id="name" type="text" class="contact_input submit_text requiredField" placeholder="Ваше Имя*">
+        </div>
+        <div class="contact_in-wrapper">
+            <label for="tel" class="hide"> Телефон   </label>
+            <input id="tel" type="tel" class="contact_input submit_tel requiredField" placeholder="Ваш телефон*">
+        </div>
+            <button type="submit" class="contact_btn basic-button">Записаться на прием
+            </button>
+
     </form>
     <p class="contact_support-text">
         Мы рады видеть Вас в наших салонах
@@ -483,9 +490,9 @@
         </h2>
         <p class="contact_desc">Заполните форму, наш менеджер свяжется с вами для подбора удобного салона и времени сеанса
         </p>
-        <form class="contact_form" action="#" method="post">
-            <input type="text" class="contact_input" placeholder="Ваше Имя*">
-            <input type="tel" class="contact_input" placeholder="Ваш телефон*">
+        <form class="contact_form submit_form" action="#" method="post">
+            <input type="text" class="contact_input submit_text requiredField" placeholder="Ваше Имя*">
+            <input type="tel" class="contact_input submit_tel requiredField" placeholder="Ваш телефон*">
             <button type="submit" class="contact_btn basic-button">Записаться на прием
             </button>
         </form>
@@ -527,12 +534,12 @@
         <h3 class="popup_headline">
             Заказать звонок
         </h3>
-        <form class="popup_form" action="#" method="post">
+        <form class="popup_form submit_form" action="#" method="post">
             <div class="popup_close">
                 <img class="popup_close-img" src="assets/ico/x.png">
             </div>
-            <input type="text" class="popup_input" placeholder="Введите Ваше имя">
-            <input type="tel" class="popup_input" placeholder="Введите Ваш телефон">
+            <input type="text" class="popup_input submit_text requiredField" placeholder="Введите Ваше имя">
+            <input type="tel" class="popup_input submit_tel requiredField" placeholder="Введите Ваш телефон">
             <button type="submit" class="popup_btn basic-button">Перезвоните мне
             </button>
         </form>

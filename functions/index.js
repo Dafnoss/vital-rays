@@ -1,5 +1,7 @@
 'use strict';
 
+/*
+
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
@@ -79,3 +81,5 @@ exports.onDataAdded = functions.database.ref('/leads/{sessionId}').onCreate(func
     goMail(leadData);
     goTelegram(leadData);
 });
+
+*/
