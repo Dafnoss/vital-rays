@@ -45,7 +45,7 @@ if (forms) {
         element.addEventListener('submit', function (evt) {
             evt.preventDefault();
 
-             console.dir(element);
+            console.dir(element);
 
             const inputName = element.querySelector('.submit_text');
             const inputPhone = element.querySelector('.submit_tel');
@@ -55,7 +55,7 @@ if (forms) {
                 firebasePush(inputName, inputPhone);
 
                 //shows alert if everything went well.
-                return alert('Data Successfully Sent to Realtime Database');
+                //return alert('Data Successfully Sent to Realtime Database');
             }
         })
     });
