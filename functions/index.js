@@ -1,11 +1,9 @@
 'use strict';
 
-/*
-
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
-const telegraf = require('telegraf');
+//const telegraf = require('telegraf');
 
 //to make it work you need gmail account
 const gmailEmail = functions.config().gmail.login;
@@ -29,22 +27,20 @@ var goMail = function (lead) {
     //this is how your email are going to look like
     const mailOptions = {
         from: gmailEmail, // sender address
-        to: 'TEST@example.com', // list of receivers
-        subject: 'New Lead from Fintech Landing', // Subject line
+        to: 'komkov-1@ya.ru', // list of receivers
+        subject: 'New Lead from Vital-Rays Landing', // Subject line
         //text: '! ' + lead.name + ' send you a message from: ' + lead.mail + '. ' + 'Message: ' + lead.message // plain text body
         html:
-            'Congratulation! You received new Fintech Lead. ' +
+            'Congratulation! You received new Vital-Rays Lead. ' +
             '<br>' +
             '<br>' +
             '<b>Request details:</b>' + '<br>' +
             '<br>' +
             'Name: ' + lead.name + '<br>' +
-            ' From: ' + lead.mail + '<br>' +
             ' Phone: ' + lead.phone + '<br>' +
-            'Message: ' + lead.message +
             '<br>' +
             '<br>' +
-            'Sent from the page: https://fintech.azoft.com/'
+            'Sent from the page: https://vitalrays716.ru/'
         // plain text body // html body
     };
 
@@ -62,6 +58,7 @@ var goMail = function (lead) {
 };
 
 //send telegram message https://t.me/joinchat/DFGNwBMWLi9y5jfX2f1mTQ
+/*
 var goTelegram = function (lead) {
 
     const bot = new telegraf.Telegram(functions.config().bot.token);
@@ -69,6 +66,8 @@ var goTelegram = function (lead) {
          '!' + lead.name + ' send you a message from: ' + lead.mail + ' and his phone number is: ' + lead.phone + '. ' + 'Message: ' + lead.message // plain text body
     );
 };
+
+*/
 
 //.onDataAdded is watches for changes in database
 exports.onDataAdded = functions.database.ref('/leads/{sessionId}').onCreate(function (snap, context) {
@@ -79,7 +78,5 @@ exports.onDataAdded = functions.database.ref('/leads/{sessionId}').onCreate(func
 
     //here we send new data using function for sending emails
     goMail(leadData);
-    goTelegram(leadData);
+    //goTelegram(leadData);
 });
-
-*/
