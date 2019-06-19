@@ -5,14 +5,15 @@
 
         //Counter randomiser
 
-        const counter1 = document.querySelector('.hero_small-title--highlighted');
-        const counter2 = document.querySelector('.sign-highlight_number');
+        const counters = Array.from(document.querySelectorAll('.counter-tag'));
 
-        var currentDate = new Date();
-        var date = currentDate.getDate();
+        const currentDate = new Date();
+        const date = currentDate.getDate();
+        const currentCounter = 31 - date;
 
-        counter1.innerHTML = 31 - date;
-        counter2.innerHTML = 31 - date;
+        counters.forEach((element) => {
+            element.innerHTML = currentCounter;
+        });
 
         //Popup
 

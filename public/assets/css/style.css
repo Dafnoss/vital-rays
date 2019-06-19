@@ -902,6 +902,7 @@ Certificates
 }
 
 .certificate-item {
+    max-width: 282px;
     display: block;
 }
 
