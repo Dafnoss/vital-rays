@@ -882,8 +882,17 @@ Feedback
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 80px 30px 80px;
+    margin: 50px 20px 30px 20px;
 
+}
+
+.feedback_scan img {
+    width: auto;
+    height: 300px;
+}
+
+.feedback_scan {
+    display: block;
 }
 
 .feedback_btn {
@@ -1543,6 +1552,14 @@ Popup
         margin: 20px 0;
         justify-content: center;
         text-align: center;
+    }
+
+    .feedback_scan {
+        padding: 0 20px;
+    }
+    .feedback_scan img {
+        width: 100%;
+        height: auto;
     }
 
     .feedback_scan:first-child {
