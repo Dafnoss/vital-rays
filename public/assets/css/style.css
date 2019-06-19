@@ -868,6 +868,11 @@ Feedback
     margin: 0 10px;
 }
 
+.feedback_youtube {
+    min-width: 560px;
+    min-height: 315px ;
+}
+
 .feedback_wrapper {
     text-align: center;
     padding-bottom: 80px;
@@ -1280,8 +1285,17 @@ Popup
     }
 
     .feedback_video {
-        margin: 0 auto;
+        margin: 0;
+        width: 100%;
+    }
 
+    .feedback_videos {
+        padding: 0;
+    }
+
+    .feedback_youtube {
+        width: 100%;
+        min-width: auto;
     }
 
     .feedback_note {
