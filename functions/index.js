@@ -27,7 +27,7 @@ var goMail = function (lead) {
     //this is how your email are going to look like
     const mailOptions = {
         from: gmailEmail, // sender address
-        to: 'komkov-1@ya.ru', // list of receivers
+        to: 'info@vitalrayskazan.ru', // list of receivers
         subject: 'New Lead from Vital-Rays Landing', // Subject line
         //text: '! ' + lead.name + ' send you a message from: ' + lead.mail + '. ' + 'Message: ' + lead.message // plain text body
         html:
@@ -38,9 +38,10 @@ var goMail = function (lead) {
             '<br>' +
             'Name: ' + lead.name + '<br>' +
             ' Phone: ' + lead.phone + '<br>' +
+            'РК : ' + lead.sickness + '<br>' +
             '<br>' +
             '<br>' +
-            'Sent from the page: https://vitalrays716.ru/'
+            'Sent from the page: https://vitalrayskazan.ru/'
         // plain text body // html body
     };
 

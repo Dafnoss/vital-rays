@@ -17,6 +17,18 @@ const config = {
     appId: "1:393227834347:web:a6e46b0fc67b8db2"
 };
 
+const getParameterByName = function (name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+};
+
+let dynamicKeyword = getParameterByName('utm_content') || 'Рекламная компания не известна';
+
 //create a functions to push
 function firebasePush(name, phone) {
 
@@ -30,6 +42,7 @@ function firebasePush(name, phone) {
         {
             name: name.value,
             phone: phone.value,
+            sickness: dynamicKeyword
         }
     );
 }
